@@ -1,0 +1,101 @@
+Usual git command
+$ git add -A    >>>>>> Add all files to staging area
+$ git commit -m "message here"    >>>>>>>> Commiting without adding message
+$ git push
+
+
+Command Exploring command
+$ ls  <<<< list of all files
+$ cd Path
+$ clear <<<< clear terminal
+
+
+
+Initializing git in folder
+$ git init  >>>>>>> to initialize a git repository
+
+$ touch .gitignore
+			# /mylog.log <<< specific file
+			# *.log      <<< extension files
+			# ignore/    <<< folder
+
+Git Config
+$ git config user.name "full_name"
+$ git config user.email "email_id"
+
+$ touch helloworld.py
+[sonalinair5072@cxln4 ~]$ echo 'print("Hello World")' >helloworld.py
+[sonalinair5072@cxln4 ~]$ cat helloworld.py
+
+Creating and editing new file in git
+$ touch helloworld.py    >>>> Reating new file
+$ echo 'print("Hello World")' >helloworld.py      >>>> editing directly in new file
+$ nano helloworld.py <or> vi helloworld.py        >>>> editing file in nano or vi editor
+>>> Command <<<
+i ---- insert
+Esc ------escape from insert mode
+:wq -----Save and Quit
+shift + ZZ  -----Save and Quit
+
+
+$ cat helloworld.py   <<<< Run the file
+
+Adding to stagging area
+$ git add helloworld.py
+
+Commiting code from stagging area
+$ git commit -m "message"        <<<<<< Commit with out Vim editor
+$ git commit -a -m "message"     <<<<<< commit by skipping stagging area or add
+
+Branches
+$ git branch <Branch Name>        <<<<< to create a new branch
+$ git checkout <Branch Name>      <<<<< to go to branch
+$ git checkout -b <Branch Name>   <<<<< creating and going to new branch directly
+$ git checkout master		  <<<<< going back to master branch
+$ git status                      <<<<< to check branch you are
+
+Merge
+$ git merge <branch_name>        <<<<< Merge the branch with master
+
+Adding and working with remote repositories
+
+$ git remote add origin git@github.com:<your-github-username>/<repository-name>.git   <<<<< get repository ssh link from github.com
+$ git remote                                                                          <<<<< shows origin
+$ git fetch
+
+$ ssh-keygen -t rsa -b 4096   <<<<<< Generate your ssh key pair
+< save it in ~/.ssh/id_rsa r on default path
+< Set the password or it can be left empty
+$ cat ~/.ssh/id_rsa.pub       <<<<<< to read ssh key
+
+Note:
+1. Don't mention any path while generating SSH just click on enter key >>>>>>>> by default  ~/.ssh/id_rsa.pub
+
+2. to copy ssh key :  cat ~/.ssh/id_rsa.pub
+
+3. Git hub >> profile >> settings >> SSH and GPG Keys >> New SSH Key >> ADD
+
+Push
+
+$ git push -u origin master
+OR  
+$ git push -u origin main
+
+Pull
+
+$ git pull origin master
+$ git pull origin <branch name>
+
+
+Clone a Repository
+
+$ git clone https://github.com/.git          <<<<<< any repo SSH link
+
+Logs
+
+$ git log           <<<<<to check commit history
+$ git log -p -5     <<<<< to check last 5 commit and changes
+$ git diff          <<<<< to show changes in working dir and stagging area
+$ git diff --staged <<<<< comparing staging area with last commit
+
+

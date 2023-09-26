@@ -1,0 +1,17 @@
+#tensorflow==2.9.1
+beautifulsoup4==4.11.1
+wikipedia==1.4.0
+pylint==2.15.0
+pytest
+gradio
+sentencepiece
+black
+click
+transformers
+datasets
+sklearn
+git+https://github.com/openai/whisper.git
+newspaper3k
+ipdb
+git+https://github.com/LIAAD/yake
+# pytorch and cuda are installed/listed on environment.yml
